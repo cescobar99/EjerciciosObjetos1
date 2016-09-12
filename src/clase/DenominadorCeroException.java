@@ -12,6 +12,6 @@ package clase;
 public class DenominadorCeroException extends Exception {
 
     public DenominadorCeroException() {
-        super("No Se Permiten Denominadores En Cero");
+        super("No se permite un denominador que sea cero");
     }
 }

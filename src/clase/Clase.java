@@ -14,9 +14,9 @@ public class Clase {
     private int Numerador;
     private int Denominador;
 
-    public Clase(int Nume, int Deno, int Mix) throws DenominadorCeroException {
-        this.Numerador = Nume;
-        this.Denominador = Deno;
+    public Clase(int Numero, int Denominador, int Mixto) throws DenominadorCeroException {
+        this.Numerador = Numero;
+        this.Denominador = Denominador;
         if (Denominador == 0) {
             throw new DenominadorCeroException();
 
@@ -42,41 +42,41 @@ public class Clase {
 
     public Clase Sumar(Clase f2) throws DenominadorCeroException {
         Clase f;
-        int Nume, Deno;
+        int Numerador, Denominador;
 
-        Nume = this.Numerador * f2.Denominador + this.Denominador * f2.Numerador;
-        Deno = this.Denominador * f2.Denominador;
-        f = new Clase(Nume, Deno, 1);
+        Numerador = this.Numerador * f2.Denominador + this.Denominador * f2.Numerador;
+        Denominador = this.Denominador * f2.Denominador;
+        f = new Clase(Numerador, Denominador, 1);
         return f;
     }
 
     public Clase Restar(Clase f2) throws DenominadorCeroException {
         Clase f;
-        int Nume, Deno;
+        int Numerador, Denominador;
 
-        Nume = this.Numerador * f2.Denominador - this.Denominador * f2.Numerador;
-        Deno = this.Denominador * f2.Denominador;
-        f = new Clase(Nume, Deno, 1);
+        Numerador = this.Numerador * f2.Denominador - this.Denominador * f2.Numerador;
+        Denominador = this.Denominador * f2.Denominador;
+        f = new Clase(Numerador, Denominador, 1);
         return f;
     }
 
     public Clase Multiplicar(Clase f2) throws DenominadorCeroException {
         Clase f;
-        int Nume, Deno;
+        int Numerador, Denominador;
 
-        Nume = this.Numerador * f2.Numerador;
-        Deno = this.Denominador * f2.Denominador;
-        f = new Clase(Nume, Deno, 1);
+        Numerador = this.Numerador * f2.Numerador;
+        Denominador = this.Denominador * f2.Denominador;
+        f = new Clase(Numerador, Denominador, 1);
         return f;
     }
 
     public Clase Dividir(Clase f2) throws DenominadorCeroException {
         Clase f;
-        int Nume, Deno;
+        int Numerador, Denominador;
 
-        Nume = this.Numerador * f2.Denominador;
-        Deno = this.Denominador * f2.Numerador;
-        f = new Clase(Nume, Deno, 1);
+        Numerador = this.Numerador * f2.Denominador;
+        Denominador = this.Denominador * f2.Numerador;
+        f = new Clase(Numerador, Denominador, 1);
         return f;
     }
 
