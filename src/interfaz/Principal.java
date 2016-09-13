@@ -175,15 +175,15 @@ public class Principal extends javax.swing.JFrame {
 
         try {
             int Operacion, Numero1, Numero2, Numero3, Denominador1, Denominador2, Denominador3, Mixto = 0;
-            Clase f1, f2, f3 = null;
+            Fracciones f1, f2, f3 = null;
             Operacion = cmbOper.getSelectedIndex();
             Numero1 = Integer.parseInt(txtNumera1.getText());
             Numero2 = Integer.parseInt(txtNumera2.getText());
             Denominador1 = Integer.parseInt(txtDenomina1.getText());
             Denominador2 = Integer.parseInt(txtDenomina2.getText());
 
-            f1 = new Clase(Numero1, Denominador1, 1);
-            f2 = new Clase(Numero2, Denominador2, 1);
+            f1 = new Fracciones(Numero1, Denominador1, 1);
+            f2 = new Fracciones(Numero2, Denominador2, 1);
 
             switch (Operacion) {
                 case 0:
